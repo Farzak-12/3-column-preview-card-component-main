@@ -11,6 +11,7 @@ body{
     display:grid;
     place-items: center;
     color: white;
+    background-color: black;
 }
 .main{
     width:fit-content;
@@ -19,6 +20,7 @@ body{
     display: flex;
     box-sizing: border-box; 
     margin-top: 100px;
+    padding:10px;
 }
 .sedans{
     background-color: hsl(31, 77%, 52%);
@@ -85,20 +87,38 @@ body{
 h2{
     font-family: 'Big Shoulders Display', sans-serif;
 }
-@media (max-width:426px) {
+@media (max-width:600px) {
     .main{
        flex-direction: column; 
     }
     .sedans{
         border-top-right-radius: 10px;
         border-bottom-left-radius:0px ;
+        height: 100%;
+        width: 100%;
+    }
+    .suvs{
+        height: 100%;
+        width: 100%;
     }
     .luxury{
         border-bottom-left-radius: 10px;
         border-top-right-radius:0px ;
+        height: 100%;
+        width: 100%;
+    }
+    body{
+    display:grid;
+    place-items:inherit;
     }
 }
 .bor{
     display: flex;
     flex-direction: column;
+}
+@media (max-width:769px){
+    main{
+        padding: 20px;
+        
+    }
 }
